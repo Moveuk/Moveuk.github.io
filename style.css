@@ -271,7 +271,7 @@ p {
 
 .bg {
   height: 100vh;
-  background-image: url("assets/벚꽃배경2.png");
+  background-image: url("/assets/벚꽃배경2.png");
   background-size: cover;
 }
 
