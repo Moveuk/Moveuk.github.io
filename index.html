@@ -3,30 +3,75 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Momentum</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>스파르타코딩클럽 | HTML 기초</title>
   </head>
-  <body>
-    <form id="login-form" class="hidden">
-      <input type="text" placeholder="What is your name?" />
-      <button>Log In</button>
-    </form>
-    <h1 id="greeting" class="hidden"></h1>
-    <h2 id="clock">00:00:00</h2>
-    <div id="quote">
-      <span></span><br />
-      <span></span>
+
+  <body class="bg center">
+    <audio id="bgm" controls autoplay>
+      <source src="/assets/bgm.mp3" type="audio/mp3" />
+      이 문장은 여러분의 브라우저가 audio 태그를 지원하지 않을 때 화면에
+      표시됩니다!
+    </audio>
+    <h1 class="title-t5">SPARTHON Bucket List</h1>
+    <p class="msg">꿈은 꾸는 것이 아닌, 이루는 것이다.</p>
+    <div class="submitwrap">
+      <input
+        class="new_bucketlist"
+        type="text"
+        placeholder="내용을 입력하세요"
+      />
+      <img
+        class="submit"
+        src="/assets/Bucket_Plus.png"
+        alt="등록 버튼"
+        onclick=""
+      />
     </div>
-    <div id="weather"><span></span> <span></span></div>
-    <form action="" id="todo-form">
-      <input type="text" placeholder="Write a To Do and Press Enter" required />
-    </form>
-    <ul id="todo-list"></ul>
-    <script src="js/weather.js"></script>
-    <script src="js/clock.js"></script>
-    <script src="js/quotes.js"></script>
-    <script src="js/background.js"></script>
-    <script src="js/todo.js"></script>
-    <script src="js/app.js"></script>
+    <div>
+      <table>
+        <tr>
+          <td>
+            <div class="bucket img1-t5 center">
+              나만의 웹 만들기
+              <img src="assets/Delete.png" class="delete_button" alt="" />
+            </div>
+          </td>
+          <td>
+            <div class="bucket img2-t5 center">
+              바디프로필 찍기
+              <img src="assets/Delete.png" class="delete_button" alt="" />
+            </div>
+          </td>
+          <td>
+            <div class="bucket img3-t5 center">
+              인테리어 꾸미기
+              <img src="assets/Delete.png" class="delete_button" alt="" />
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="bucket img4-t5 center">
+              식물 키우기
+              <img src="assets/Delete.png" class="delete_button" alt="" />
+            </div>
+          </td>
+          <td>
+            <div class="bucket img5-t5 center">
+              10킬로그램 감량!
+              <img src="assets/Delete.png" class="delete_button" alt="" />
+            </div>
+          </td>
+          <td>
+            <div class="bucket img6-t5 center">
+              내가 만든 웹사이트 자랑하기
+              <img src="assets/Delete.png" class="delete_button" alt="" />
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
